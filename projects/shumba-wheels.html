@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shumba Wheels — Nokutenda Bosha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">NB</span>
+        <span>Nokutenda Bosha</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#process">Process</a>
+        <a href="../index.html#contact" class="contact-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="detail-hero">
+    <div class="shell">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../index.html#work">Work</a>
+        <span>/</span>
+        <span>Shumba Wheels</span>
+      </div>
+
+      <h1>Shumba <span class="ital">Wheels.</span></h1>
+
+      <dl class="detail-meta">
+        <div><dt>Project</dt><dd>Driving school management system</dd></div>
+        <div><dt>Role</dt><dd>Designer &amp; Developer</dd></div>
+        <div><dt>Year</dt><dd>2025</dd></div>
+        <div><dt>Live</dt><dd><a href="https://shumbawheels.co.zw" target="_blank" rel="noopener">shumbawheels.co.zw ↗</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="shell">
+    <div class="hero-shot">
+      <image-slot id="shumba-cover" placeholder="Drop the main Shumba Wheels screenshot here" shape="rect"></image-slot>
+    </div>
+  </div>
+
+  <section class="detail-body">
+    <div class="shell" style="display:contents;">
+      <div class="shell">
+        <div style="display:grid;grid-template-columns:1fr 2fr;gap:clamp(40px,6vw,96px);">
+          <div>
+            <div class="mono" style="margin-bottom:8px;">01 — Overview</div>
+            <h3>The <em>brief.</em></h3>
+          </div>
+          <div class="body-col">
+            <p>
+              Shumba Wheels is a web-based driving school management system built to streamline the day-to-day operations of a busy driving school. The platform centralises students, driving instructors, lessons, bookings, payments and inquiries into one place.
+            </p>
+            <p>
+              I worked as both the web designer and web developer — gathering requirements, designing the user interface, and developing the application to ensure it was responsive, user-friendly and efficient. The goal was to digitise many of the school's manual processes so administrators could focus on teaching rather than paperwork.
+            </p>
+
+            <h4>Key features</h4>
+            <ul class="features">
+              <li>Student registration &amp; profiles</li>
+              <li>Instructor management</li>
+              <li>Lesson booking &amp; scheduling</li>
+              <li>Course management</li>
+              <li>Online inquiries</li>
+              <li>Payment tracking</li>
+              <li>Dashboard with key statistics</li>
+              <li>User authentication &amp; login</li>
+              <li>Responsive mobile / desktop</li>
+              <li>Contact forms &amp; notifications</li>
+            </ul>
+
+            <h4>Approach</h4>
+            <p>
+              Usability was the north star. I focused on a clean interface that non-technical staff could learn quickly — clear navigation, generous spacing, forms that read like conversations. On the technical side, PHP and MySQL handle the data model, with Bootstrap providing a reliable responsive shell.
+            </p>
+
+            <h4>Outcome</h4>
+            <p>
+              The school moved from paper-based records and phone-call bookings to a centralised digital workflow. Administrators now see enrolment, schedules and payments at a glance, and prospective students can inquire and book directly through the site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="shell">
+      <div class="mono" style="margin-bottom:24px;">02 — Screens</div>
+      <div class="gallery-grid">
+        <div class="slot"><span class="frame-label">Dashboard</span><image-slot id="shumba-shot-1" placeholder="Dashboard screenshot" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Bookings</span><image-slot id="shumba-shot-2" placeholder="Booking screen" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Student profile</span><image-slot id="shumba-shot-3" placeholder="Student profile" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Mobile view</span><image-slot id="shumba-shot-4" placeholder="Mobile responsive screen" shape="rect"></image-slot></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="next-project">
+    <div class="shell" style="display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap;width:100%;">
+      <a href="raindrop-driving.html">
+        <div class="lbl">Next project →</div>
+        <h3>Raindrop <span class="ital">Driving.</span></h3>
+      </a>
+      <div class="side">02 &nbsp;/&nbsp; 04</div>
+    </div>
+  </section>
+
+  <section class="contact" style="border-top:1px solid var(--line);">
+    <div class="shell">
+      <div class="num" style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:24px;">— Contact</div>
+      <h2>Let's build<br>something <span class="accent">worth</span><br><span class="ital">making.</span></h2>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:boshanokutenda@gmail.com"><span class="k">Email</span><span class="v">boshanokutenda@gmail.com</span></a>
+          <a href="tel:+263779707567"><span class="k">Phone</span><span class="v">+263 77 970 7567</span></a>
+          <a href="https://github.com/Technock-flash" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">@Technock-flash ↗</span></a>
+        </div>
+        <div class="contact-side">
+          <span class="label">Currently</span>
+          <p>Available for freelance web design &amp; development projects — remote, worldwide.</p>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <span>© 2026 Nokutenda Bosha</span>
+        <span>Harare, Zimbabwe · CAT</span>
+        <span class="rot">Handcrafted with care</span>
+      </footer>
+    </div>
+  </section>
+
+  <script src="../image_slot.js"></script>
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 8), { passive: true });
+  </script>
+</body>
+</html>

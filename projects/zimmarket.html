@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zimmarket — Nokutenda Bosha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">NB</span>
+        <span>Nokutenda Bosha</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#process">Process</a>
+        <a href="../index.html#contact" class="contact-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="detail-hero">
+    <div class="shell">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../index.html#work">Work</a>
+        <span>/</span>
+        <span>Zimmarket</span>
+      </div>
+
+      <h1>Zim<span class="ital">market.</span></h1>
+
+      <dl class="detail-meta">
+        <div><dt>Project</dt><dd>Local marketplace platform</dd></div>
+        <div><dt>Role</dt><dd>Designer &amp; Developer</dd></div>
+        <div><dt>Year</dt><dd>2023</dd></div>
+        <div><dt>Type</dt><dd>Personal project</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="shell">
+    <div class="hero-shot">
+      <image-slot id="zm-cover" placeholder="Drop the main Zimmarket screenshot here" shape="rect"></image-slot>
+    </div>
+  </div>
+
+  <section class="detail-body">
+    <div class="shell">
+      <div style="display:grid;grid-template-columns:1fr 2fr;gap:clamp(40px,6vw,96px);">
+        <div>
+          <div class="mono" style="margin-bottom:8px;">01 — Overview</div>
+          <h3>The <em>brief.</em></h3>
+        </div>
+        <div class="body-col">
+          <p>
+            Zimmarket is a local marketplace concept that connects Zimbabwean sellers with buyers. The platform lets vendors list products with photos and descriptions, and lets shoppers browse by category, search, and reach out to sellers directly.
+          </p>
+          <p>
+            Given the local context, performance on modest connections was a hard requirement. I kept the front-end lean — semantic HTML, minimal JavaScript, image handling tuned for mobile data — and shaped the database schema to keep queries fast even with a lot of listings.
+          </p>
+
+          <h4>What's included</h4>
+          <ul class="features">
+            <li>Product listings with images</li>
+            <li>Category browsing</li>
+            <li>Search &amp; filtering</li>
+            <li>Seller profiles</li>
+            <li>Inquiry / contact system</li>
+            <li>Lightweight admin panel</li>
+            <li>User registration &amp; login</li>
+            <li>Mobile-first responsive UI</li>
+          </ul>
+
+          <h4>Stack &amp; considerations</h4>
+          <p>
+            Built with PHP, MySQL, HTML5, CSS3 and JavaScript. Special attention went into image optimisation, minimal payload, and clear navigation for first-time visitors. The admin surface is deliberately small — enough to moderate listings and manage users, no more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="shell">
+      <div class="mono" style="margin-bottom:24px;">02 — Screens</div>
+      <div class="gallery-grid">
+        <div class="slot"><span class="frame-label">Homepage</span><image-slot id="zm-shot-1" placeholder="Homepage" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Product listings</span><image-slot id="zm-shot-2" placeholder="Listings" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Product detail</span><image-slot id="zm-shot-3" placeholder="Product detail" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Mobile view</span><image-slot id="zm-shot-4" placeholder="Mobile view" shape="rect"></image-slot></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="next-project">
+    <div class="shell" style="display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap;width:100%;">
+      <a href="../index.html#work">
+        <div class="lbl">Back to work →</div>
+        <h3>All <span class="ital">projects.</span></h3>
+      </a>
+      <div class="side">End &nbsp;/&nbsp; 04</div>
+    </div>
+  </section>
+
+  <section class="contact" style="border-top:1px solid var(--line);">
+    <div class="shell">
+      <div class="num" style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:24px;">— Contact</div>
+      <h2>Let's build<br>something <span class="accent">worth</span><br><span class="ital">making.</span></h2>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:boshanokutenda@gmail.com"><span class="k">Email</span><span class="v">boshanokutenda@gmail.com</span></a>
+          <a href="tel:+263779707567"><span class="k">Phone</span><span class="v">+263 77 970 7567</span></a>
+          <a href="https://github.com/Technock-flash" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">@Technock-flash ↗</span></a>
+        </div>
+        <div class="contact-side">
+          <span class="label">Currently</span>
+          <p>Available for freelance web design &amp; development projects — remote, worldwide.</p>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <span>© 2026 Nokutenda Bosha</span>
+        <span>Harare, Zimbabwe · CAT</span>
+        <span class="rot">Handcrafted with care</span>
+      </footer>
+    </div>
+  </section>
+
+  <script src="../image_slot.js"></script>
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 8), { passive: true });
+  </script>
+</body>
+</html>
