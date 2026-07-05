@@ -11,7 +11,7 @@ $assets = @(
   'assets/kingdom-screen-2.png',
   'assets/zimmarket-screen-1.png',
   'assets/zimmarket-screen-2.png',
-  'assets/portrait.heic',
+  'assets/portrait.jpg',
   # Portrait / vector fallbacks
   'assets/portrait.svg'
 )

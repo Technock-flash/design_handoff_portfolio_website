@@ -63,10 +63,10 @@ After copying, the site will reference `zimmarket-screen-1.png` and `zimmarket-s
 
 Portrait (your photo)
 
-If you'd like the site portrait to use your HEIC photo, copy it into `assets/` as `portrait.heic`:
+To use your JPG portrait on the site, copy it into `assets/` as `portrait.jpg`:
 
 ```powershell
-Copy-Item "C:\Users\lenovo\Pictures\IMG_1937.HEIC" .\assets\portrait.heic -Force
+Copy-Item "C:\Users\lenovo\Pictures\IMG_2752.JPG" .\assets\portrait.jpg -Force
 
 # Then generate WebP variants (optional but recommended):
 .\convert-images.ps1
