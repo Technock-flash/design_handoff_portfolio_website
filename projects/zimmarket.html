@@ -49,7 +49,10 @@
 
   <div class="shell">
     <div class="hero-shot">
-      <image-slot id="zm-cover" placeholder="Drop the main Zimmarket screenshot here" shape="rect"></image-slot>
+      <picture>
+        <source type="image/webp" srcset="../assets/zimmarket.webp 1x, ../assets/zimmarket@2x.webp 2x">
+        <img src="../assets/zimmarket.svg" alt="Zimmarket marketplace homepage" loading="lazy" decoding="async" />
+      </picture>
     </div>
   </div>
 
@@ -93,10 +96,30 @@
     <div class="shell">
       <div class="mono" style="margin-bottom:24px;">02 — Screens</div>
       <div class="gallery-grid">
-        <div class="slot"><span class="frame-label">Homepage</span><image-slot id="zm-shot-1" placeholder="Homepage" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Product listings</span><image-slot id="zm-shot-2" placeholder="Listings" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Product detail</span><image-slot id="zm-shot-3" placeholder="Product detail" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Mobile view</span><image-slot id="zm-shot-4" placeholder="Mobile view" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Homepage</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/zim-home.webp 1x, ../assets/zim-home@2x.webp 2x">
+            <img src="../assets/zimmarket.svg" alt="Zimmarket homepage" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Product listings</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/zim-listings.webp 1x, ../assets/zim-listings@2x.webp 2x">
+            <img src="../assets/zimmarket.svg" alt="Product listings" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Product detail</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/zim-product.webp 1x, ../assets/zim-product@2x.webp 2x">
+            <img src="../assets/zimmarket.svg" alt="Product detail page" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Mobile view</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/zim-mobile.webp 1x, ../assets/zim-mobile@2x.webp 2x">
+            <img src="../assets/zimmarket.svg" alt="Mobile responsive view" loading="lazy" decoding="async" />
+          </picture>
+        </div>
       </div>
     </div>
   </section>

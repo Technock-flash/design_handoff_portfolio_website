@@ -36,6 +36,27 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
+/* --- Skip link -------------------------------------------- */
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  left: 12px;
+  top: 12px;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 6px;
+  z-index: 1000;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -708,6 +729,44 @@ section { padding: clamp(80px, 12vh, 160px) 0; }
   .contact-grid { grid-template-columns: 1fr; }
 }
 
+/* --- Buttons & CTAs ---------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn.primary {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 18px;
+  border-radius: 999px;
+}
+.btn.primary:hover { background: var(--accent); }
+.btn.ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.hero-cta { margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Nav resume link */
+.nav .resume-link {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink-2);
+}
+.nav .resume-link:hover { color: var(--accent); border-color: color-mix(in oklab, var(--accent) 25%, transparent); }
+
 /* --- Detail page --------------------------------------------- */
 
 .detail-hero {
@@ -776,6 +835,15 @@ section { padding: clamp(80px, 12vh, 160px) 0; }
   padding: clamp(60px, 10vh, 120px) 0;
   border-top: 1px solid var(--line);
 }
+
+/* Case study specific */
+.kpis { display:flex; gap:18px; margin-top:18px; flex-wrap:wrap; }
+.kpi { background:var(--paper-2); border:1px solid var(--line); padding:14px 18px; border-radius:8px; min-width:140px; }
+.kpi .n { font-family:var(--serif); font-size:28px; color:var(--ink); display:block; }
+.kpi .l { font-family:var(--mono); font-size:11px; color:var(--ink-3); text-transform:uppercase; letter-spacing:0.12em; }
+
+.case-cta { margin-top:24px; display:flex; gap:12px; }
+.printable { display:inline-block; font-family:var(--mono); font-size:12px; color:var(--ink-3); border:1px solid var(--line); padding:8px 12px; border-radius:8px; }
 .detail-body h3 {
   font-size: 28px;
   letter-spacing: -0.02em;

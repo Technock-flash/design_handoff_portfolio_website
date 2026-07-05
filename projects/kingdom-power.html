@@ -49,7 +49,10 @@
 
   <div class="shell">
     <div class="hero-shot">
-      <image-slot id="kp-cover" placeholder="Drop the main screenshot here" shape="rect"></image-slot>
+      <picture>
+        <source type="image/webp" srcset="../assets/kingdom-power.webp 1x, ../assets/kingdom-power@2x.webp 2x">
+        <img src="../assets/kingdom-power.svg" alt="Kingdom Power admin dashboard" loading="lazy" decoding="async" />
+      </picture>
     </div>
   </div>
 
@@ -93,10 +96,30 @@
     <div class="shell">
       <div class="mono" style="margin-bottom:24px;">02 — Screens</div>
       <div class="gallery-grid">
-        <div class="slot"><span class="frame-label">Dashboard</span><image-slot id="kp-shot-1" placeholder="Dashboard" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Members</span><image-slot id="kp-shot-2" placeholder="Members list" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Events</span><image-slot id="kp-shot-3" placeholder="Events" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Mobile view</span><image-slot id="kp-shot-4" placeholder="Mobile view" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Dashboard</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/kp-dashboard.webp 1x, ../assets/kp-dashboard@2x.webp 2x">
+            <img src="../assets/kingdom-power.svg" alt="Dashboard showing member stats" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Members</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/kp-members.webp 1x, ../assets/kp-members@2x.webp 2x">
+            <img src="../assets/kingdom-power.svg" alt="Members list" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Events</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/kp-events.webp 1x, ../assets/kp-events@2x.webp 2x">
+            <img src="../assets/kingdom-power.svg" alt="Events management" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Mobile view</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/kp-mobile.webp 1x, ../assets/kp-mobile@2x.webp 2x">
+            <img src="../assets/kingdom-power.svg" alt="Mobile responsive view" loading="lazy" decoding="async" />
+          </picture>
+        </div>
       </div>
     </div>
   </section>

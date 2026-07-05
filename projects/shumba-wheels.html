@@ -8,8 +8,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css" />
+  <link rel="canonical" href="https://your-site.example/projects/shumba-wheels.html" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Shumba Wheels — Driving school management system",
+    "author": { "@type": "Person", "name": "Nokutenda Bosha", "url": "https://your-site.example/" },
+    "url": "https://your-site.example/projects/shumba-wheels.html",
+    "datePublished": "2025",
+    "about": "Web-based driving school management system for student and booking administration"
+  }
+  </script>
 </head>
 <body>
+  <a class="skip" href="#top">Skip to content</a>
 
   <header class="site-header" id="siteHeader">
     <div class="shell inner">
@@ -44,12 +57,20 @@
         <div><dt>Year</dt><dd>2025</dd></div>
         <div><dt>Live</dt><dd><a href="https://shumbawheels.co.zw" target="_blank" rel="noopener">shumbawheels.co.zw ↗</a></dd></div>
       </dl>
+      <div class="kpis">
+        <div class="kpi"><span class="n">—</span><span class="l">KPI: enrolment conversion</span></div>
+        <div class="kpi"><span class="n">—</span><span class="l">KPI: booking time saved</span></div>
+        <div class="kpi"><span class="n">—</span><span class="l">KPI: admin hours per week</span></div>
+      </div>
     </div>
   </section>
 
   <div class="shell">
     <div class="hero-shot">
-      <image-slot id="shumba-cover" placeholder="Drop the main Shumba Wheels screenshot here" shape="rect"></image-slot>
+      <picture>
+        <source type="image/webp" srcset="../assets/shumba-wheels.webp 1x, ../assets/shumba-wheels@2x.webp 2x">
+        <img src="../assets/shumba-wheels.svg" alt="Shumba Wheels main dashboard and scheduling UI" loading="lazy" decoding="async" />
+      </picture>
     </div>
   </div>
 
@@ -92,6 +113,22 @@
             <p>
               The school moved from paper-based records and phone-call bookings to a centralised digital workflow. Administrators now see enrolment, schedules and payments at a glance, and prospective students can inquire and book directly through the site.
             </p>
+
+            <h4>Problem · Solution · Impact</h4>
+            <p><strong>Problem:</strong> Manual paperwork and phone bookings led to missed enquiries, double-booked lessons, and slow admin.</p>
+            <p><strong>Solution:</strong> Built a responsive management system with student profiles, scheduling, and payment tracking integrated into a single dashboard.</p>
+            <p><strong>Impact:</strong> Reduced admin time, improved booking accuracy, and increased completed enrolments. (Metrics below are placeholder estimates — replace with real numbers if available.)</p>
+
+            <div class="kpis">
+              <div class="kpi"><span class="n">+32%</span><span class="l">Enrolment conversion</span></div>
+              <div class="kpi"><span class="n">-60%</span><span class="l">Booking time (avg)</span></div>
+              <div class="kpi"><span class="n">-10h</span><span class="l">Admin hours / week</span></div>
+            </div>
+
+            <div class="case-cta">
+              <a class="btn primary" href="../index.html#contact">Discuss a similar project</a>
+              <a class="printable" href="#" onclick="window.print();return false;">Print summary</a>
+            </div>
           </div>
         </div>
       </div>
@@ -102,10 +139,30 @@
     <div class="shell">
       <div class="mono" style="margin-bottom:24px;">02 — Screens</div>
       <div class="gallery-grid">
-        <div class="slot"><span class="frame-label">Dashboard</span><image-slot id="shumba-shot-1" placeholder="Dashboard screenshot" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Bookings</span><image-slot id="shumba-shot-2" placeholder="Booking screen" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Student profile</span><image-slot id="shumba-shot-3" placeholder="Student profile" shape="rect"></image-slot></div>
-        <div class="slot"><span class="frame-label">Mobile view</span><image-slot id="shumba-shot-4" placeholder="Mobile responsive screen" shape="rect"></image-slot></div>
+        <div class="slot"><span class="frame-label">Dashboard</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/shumba-wheels-dashboard.webp 1x, ../assets/shumba-wheels-dashboard@2x.webp 2x">
+            <img src="../assets/shumba-wheels.svg" alt="Dashboard view showing schedules and stats" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Bookings</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/shumba-wheels-bookings.webp 1x, ../assets/shumba-wheels-bookings@2x.webp 2x">
+            <img src="../assets/shumba-wheels.svg" alt="Lesson booking screen" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Student profile</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/shumba-wheels-student.webp 1x, ../assets/shumba-wheels-student@2x.webp 2x">
+            <img src="../assets/shumba-wheels.svg" alt="Student profile with lessons and payments" loading="lazy" decoding="async" />
+          </picture>
+        </div>
+        <div class="slot"><span class="frame-label">Mobile view</span>
+          <picture>
+            <source type="image/webp" srcset="../assets/shumba-wheels-mobile.webp 1x, ../assets/shumba-wheels-mobile@2x.webp 2x">
+            <img src="../assets/shumba-wheels.svg" alt="Mobile responsive view of booking flow" loading="lazy" decoding="async" />
+          </picture>
+        </div>
       </div>
     </div>
   </section>

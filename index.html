@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nokutenda Bosha — Web Designer & Developer</title>
   <meta name="description" content="Portfolio of Nokutenda Bosha — web designer and developer based in Harare, Zimbabwe. Building thoughtful digital products and web applications." />
+  <meta property="og:title" content="Nokutenda Bosha — Web Designer & Developer" />
+  <meta property="og:description" content="Portfolio of Nokutenda Bosha — web designer and developer based in Harare, Zimbabwe. Building thoughtful digital products and web applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-site.example/" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="canonical" href="https://your-site.example/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nokutenda Bosha",
+    "jobTitle": "Web Designer & Developer",
+    "url": "https://your-site.example/",
+    "sameAs": ["https://github.com/Technock-flash"],
+    "email": "mailto:boshanokutenda@gmail.com"
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +34,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip" href="#top">Skip to content</a>
 
   <!-- ================================================ HEADER -->
   <header class="site-header" id="siteHeader">
@@ -25,6 +47,7 @@
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#process">Process</a>
+          <a href="resume.html" class="resume-link" target="_blank" rel="noopener">Resume</a>
         <a href="#contact" class="contact-cta">Get in touch</a>
       </nav>
     </div>
@@ -49,6 +72,10 @@
         <p class="lede reveal">
           I'm Nokutenda — a final-year Computer Engineering student at Midlands State University, building responsive websites and management systems for businesses across Zimbabwe and beyond.
         </p>
+        <div class="hero-cta reveal">
+          <a class="btn primary" href="#work">View my work</a>
+          <a class="btn ghost" href="resume.html" target="_blank" rel="noopener">Open resume</a>
+        </div>
         <div class="meta reveal">
           <span>Based in <strong>Harare, Zimbabwe</strong></span>
           <span>Open to <strong>remote freelance</strong></span>
@@ -107,7 +134,10 @@
           </div>
           <div class="project-media">
             <span class="frame-label">shumbawheels.co.zw</span>
-            <image-slot id="shumba-hero-slot" placeholder="Drag Shumba Wheels screenshot here" shape="rect"></image-slot>
+            <picture>
+              <source type="image/webp" srcset="assets/shumba-wheels.webp 1x, assets/shumba-wheels@2x.webp 2x">
+              <img src="assets/shumba-wheels.svg" alt="Shumba Wheels dashboard and booking UI" loading="lazy" decoding="async" />
+            </picture>
           </div>
         </article>
 
@@ -123,12 +153,20 @@
             </div>
             <div class="actions">
               <a class="arrow-link" href="projects/raindrop-driving.html">View case study <span class="a">→</span></a>
-              <a class="arrow-link" href="https://raindropdriving.co.zw" target="_blank" rel="noopener">Live site <span class="a">↗</span></a>
+              <a class="arrow-link" href="https://raindropdrivingschool.co.zw" target="_blank" rel="noopener">Live site <span class="a">↗</span></a>
             </div>
           </div>
           <div class="project-media">
-            <span class="frame-label">raindropdriving.co.zw</span>
-            <image-slot id="raindrop-hero-slot" placeholder="Drag Raindrop screenshot here" shape="rect"></image-slot>
+            <span class="frame-label">raindropdrivingschool
+              <picture style="display:inline-block;vertical-align:middle;">
+                <source type="image/webp" srcset="assets/portrait.webp 1x, assets/portrait@2x.webp 2x">
+                <img src="assets/portrait.svg" alt="Portrait photo of Nokutenda Bosha" loading="lazy" decoding="async" style="width:40px;height:40px;display:inline-block;vertical-align:middle;border-radius:6px;" />
+              </picture>
+            .co.zw</span>
+            <picture>
+              <source type="image/webp" srcset="assets/raindrop-driving.webp 1x, assets/raindrop-driving@2x.webp 2x">
+              <img src="assets/raindrop-driving.svg" alt="Raindrop Driving marketing homepage" loading="lazy" decoding="async" />
+            </picture>
           </div>
         </article>
 
@@ -148,7 +186,10 @@
           </div>
           <div class="project-media">
             <span class="frame-label">Church management system</span>
-            <image-slot id="kingdom-hero-slot" placeholder="Drag Kingdom Power screenshot here" shape="rect"></image-slot>
+            <picture>
+              <source type="image/webp" srcset="assets/kingdom-power.webp 1x, assets/kingdom-power@2x.webp 2x">
+              <img src="assets/kingdom-power.svg" alt="Kingdom Power church management dashboard" loading="lazy" decoding="async" />
+            </picture>
           </div>
         </article>
 
@@ -168,7 +209,10 @@
           </div>
           <div class="project-media">
             <span class="frame-label">Local marketplace</span>
-            <image-slot id="zimmarket-hero-slot" placeholder="Drag Zimmarket screenshot here" shape="rect"></image-slot>
+            <picture>
+              <source type="image/webp" srcset="assets/zimmarket.webp 1x, assets/zimmarket@2x.webp 2x">
+              <img src="assets/zimmarket.svg" alt="Zimmarket marketplace product listing" loading="lazy" decoding="async" />
+            </picture>
           </div>
         </article>
 
@@ -189,7 +233,10 @@
 
       <div class="about-grid">
         <div class="about-portrait">
-          <image-slot id="portrait-slot" placeholder="Drop a portrait photo" shape="rect"></image-slot>
+          <picture>
+            <source type="image/webp" srcset="assets/portrait.webp 1x, assets/portrait@2x.webp 2x">
+            <img src="assets/portrait.svg" alt="Portrait photo of Nokutenda Bosha" loading="lazy" decoding="async" />
+          </picture>
           <span class="cap">Fig. 01 — Portrait</span>
         </div>
 
