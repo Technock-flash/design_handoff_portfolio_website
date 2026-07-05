@@ -191,6 +191,96 @@ section { padding: clamp(80px, 12vh, 160px) 0; }
 .nav .contact-cta::after { display: none; }
 .nav .contact-cta:hover { background: var(--accent); }
 
+.mobile-nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+}
+.mobile-nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--ink);
+  border-radius: 999px;
+  transition: transform 200ms ease, opacity 200ms ease;
+  position: absolute;
+  left: 0;
+}
+.mobile-nav-toggle span:nth-child(1) { top: 9px; }
+.mobile-nav-toggle span:nth-child(2) { top: 18px; }
+.mobile-nav-toggle span:nth-child(3) { top: 27px; }
+
+.nav {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 24, 21, 0.5);
+  opacity: 0;
+  transition: opacity 240ms ease;
+  z-index: 45;
+  pointer-events: none;
+}
+.mobile-nav-overlay.visible {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    border-bottom: 0;
+  }
+  .mobile-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(320px, 100%);
+    padding: 84px 24px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    background: rgba(247, 244, 238, 0.98);
+    border-left: 1px solid var(--line);
+    transform: translateX(100%);
+    transition: transform 240ms ease;
+    z-index: 50;
+    overflow-y: auto;
+  }
+  .nav.open {
+    transform: translateX(0);
+  }
+  .nav a {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 14px;
+  }
+  .nav .contact-cta,
+  .nav .resume-link {
+    width: 100%;
+  }
+  .site-header .inner {
+    justify-content: space-between;
+  }
+}
+
 /* --- Availability pill --------------------------------------- */
 
 .avail {
@@ -725,8 +815,144 @@ section { padding: clamp(80px, 12vh, 160px) 0; }
   gap: 8px;
 }
 
+@media (max-width: 900px) {
+  .section-head {
+    grid-template-columns: 1fr;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .section-head .aside {
+    text-align: left;
+  }
+}
+
 @media (max-width: 720px) {
-  .contact-grid { grid-template-columns: 1fr; }
+  .site-header .inner {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 14px;
+  }
+  .nav a {
+    padding: 8px 0;
+    font-size: 11px;
+  }
+  .hero-eyebrow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .hero-lower {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    align-items: start;
+  }
+  .hero-title {
+    max-width: 100%;
+  }
+  .hero-lower .lede {
+    font-size: 18px;
+  }
+  .project {
+    padding: 28px 0;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-portrait {
+    max-width: none;
+  }
+  .about-body h2 {
+    max-width: 100%;
+  }
+  .contact h2 {
+    font-size: clamp(40px, 10vw, 72px);
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .site-footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 15px;
+  }
+  .shell {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .site-header .inner {
+    justify-content: space-between;
+  }
+  .nav {
+    gap: 10px;
+  }
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .hero-eyebrow,
+  .hero-lower {
+    gap: 18px;
+  }
+  .hero-lower .meta {
+    font-size: 11px;
+  }
+  .hero-cta,
+  .actions,
+  .contact-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .project {
+    gap: 24px;
+    padding: 18px 0;
+  }
+  .project-info {
+    max-width: 100%;
+  }
+  .project-info h3 {
+    font-size: clamp(30px, 7vw, 36px);
+  }
+  .project-info .summary {
+    font-size: 16px;
+  }
+  .about-facts {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .skills-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+  .detail-meta {
+    grid-template-columns: 1fr;
+  }
+  .detail-body {
+    grid-template-columns: 1fr;
+  }
+  .detail-body ul.features {
+    columns: 1;
+  }
+  .site-footer {
+    text-align: center;
+  }
+  .marquee {
+    display: none;
+  }
 }
 
 /* --- Buttons & CTAs ---------------------------------------- */

@@ -43,13 +43,19 @@
         <span class="brand-mark">NB</span>
         <span>Nokutenda Bosha</span>
       </a>
-      <nav class="nav">
+      <button class="mobile-nav-toggle" aria-controls="siteNav" aria-expanded="false" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav">
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#process">Process</a>
           <a href="resume.html" class="resume-link" target="_blank" rel="noopener">Resume</a>
         <a href="#contact" class="contact-cta">Get in touch</a>
       </nav>
+      <div class="mobile-nav-overlay" aria-hidden="true"></div>
     </div>
   </header>
 
@@ -436,6 +442,28 @@
         e.preventDefault();
         window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 60, behavior: 'smooth' });
       });
+    });
+
+    const nav = document.getElementById('siteNav');
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+    const navOverlay = document.querySelector('.mobile-nav-overlay');
+    const closeMenu = () => {
+      nav.classList.remove('open');
+      navOverlay?.classList.remove('visible');
+      navToggle?.setAttribute('aria-expanded', 'false');
+      navToggle?.setAttribute('aria-label', 'Open navigation');
+    };
+
+    navToggle?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      navOverlay?.classList.toggle('visible', open);
+      navToggle.setAttribute('aria-expanded', String(open));
+      navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    });
+
+    navOverlay?.addEventListener('click', closeMenu);
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', closeMenu);
     });
   </script>
 </body>
