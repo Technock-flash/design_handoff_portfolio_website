@@ -2,10 +2,17 @@
 # Run from project root: .\convert-images.ps1
 
 $assets = @(
-  'assets/shumba-wheels.svg',
-  'assets/raindrop-driving.svg',
-  'assets/kingdom-power.svg',
-  'assets/zimmarket.svg',
+  # Screenshots (PNG) provided by client — script will skip missing files
+  'assets/shumba-screen-1.png',
+  'assets/shumba-screen-2.png',
+  'assets/raindrop-screen-1.png',
+  'assets/raindrop-screen-2.png',
+  'assets/kingdom-screen-1.png',
+  'assets/kingdom-screen-2.png',
+  'assets/zimmarket-screen-1.png',
+  'assets/zimmarket-screen-2.png',
+  'assets/portrait.heic',
+  # Portrait / vector fallbacks
   'assets/portrait.svg'
 )
 
